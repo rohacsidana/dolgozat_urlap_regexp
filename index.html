@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div id="adatok">
+        <h3>Adatok:</h3>
+        <label for="fnev">Felhasználói név: </label>
+        <input
+          type="text"
+          name="fnev"
+          id="fnev"
+          placeholder="gourmet_1"
+          pattern="[A-z_\d]{6,}"
+          title="Van benne _jel vagy szám vagy betű, minimum 6 karakter hosszú"
+        /><br />
+        <label for="jelszo">Jelszó: </label>
+        <input
+          type="password"
+          name="jelszo"
+          id="jelszo"
+          pattern="^\W.{7,}"
+          title="Különleges jellel (nem betű, nem szám, nem szóköz) kezdődik, minimum 8 karakter"
+        /><br />
+      </div>
+      <div id="kedvkaja">
+        <h3>Kedvenc étel:</h3>
+        <label for="lehet">Lehetőségek: </label>
+        <input list="lehetosegek" name="lehet" id="lehet" />
+        <datalist id="lehetosegek">
+          <option value="Pizza"></option>
+          <option value="Pörkölt"></option>
+          <option value="Vadas"></option>
+          <option value="Palacsinta"></option></datalist
+        ><br />
+      </div>
+      <div id="allergy">
+        <h3>Étel-allergiák:</h3>
+        <input
+          type="text"
+          name="allergia"
+          id="allergia"
+          placeholder="Glutén-érzékenység, tej-érzékenység, mogyoró-allergia..."
+        />
+        <br />
+        <input type="submit" value="Küldés" />
+      </div>
+    </form>
+  </body>
+</html>

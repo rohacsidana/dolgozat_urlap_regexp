@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(253, 233, 208);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#allergia {
+  width: 350px;
+  height: 50px;
+}
+form {
+  align-self: center;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div {
+  border: 0.5px dashed rgb(48, 26, 48);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgb(217, 253, 188);
+}
+h3 {
+  align-self: center;
+}
+input {
+  background-color: rgb(236, 255, 237);
+  border: none;
+}
